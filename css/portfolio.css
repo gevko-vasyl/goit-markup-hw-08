@@ -334,9 +334,6 @@ h6 {
   padding: 0;
 }
 
-/*.item + .item {
-  margin-left: 30px;
-}*/
 .no-title {
   display: none;
 }
@@ -597,24 +594,7 @@ h6 {
   background: #2f303a;
 }
 
-.footer-box > .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.foot-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 70px;
-}
-
-.address-text {
+.foot-contacts .address-text {
   margin-top: 20px;
   font-style: normal;
   font-size: 14px;
@@ -622,7 +602,7 @@ h6 {
   color: #ffffff;
 }
 
-.foot-link {
+.foot-contacts .foot-link {
   margin-top: 9px;
   font-style: normal;
   font-size: 14px;
@@ -630,12 +610,12 @@ h6 {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.studio-social {
+.foot-contacts .studio-social {
   margin-top: 12px;
   margin-right: 93px;
 }
 
-.studio-social-title {
+.foot-contacts .studio-social-title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -643,30 +623,11 @@ h6 {
   color: #ffffff;
 }
 
-.studio-social-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 20px;
-}
-
-.studio-link:not(:last-child) {
+.foot-contacts .studio-link:not(:last-child) {
   margin-right: 10px;
 }
 
-.studio-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.foot-contacts .studio-link {
   width: 44px;
   height: 44px;
   color: #ffffff;
@@ -676,22 +637,15 @@ h6 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.studio-link:hover, .studio-link:focus {
+.foot-contacts .studio-link:hover, .foot-contacts .studio-link:focus {
   background-color: #2196f3;
 }
 
-.subscribe {
+.foot-contacts .subscribe {
   margin-top: 12px;
 }
 
-.subscribe-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 20px;
-}
-
-.subscribe-title {
+.foot-contacts .subscribe-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -699,7 +653,7 @@ h6 {
   color: #ffffff;
 }
 
-.subscribe-input {
+.foot-contacts .subscribe-input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -713,35 +667,35 @@ h6 {
   color: #ffffff;
 }
 
-.subscribe-input::-webkit-input-placeholder {
+.foot-contacts .subscribe-input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-input:-ms-input-placeholder {
+.foot-contacts .subscribe-input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-input::-ms-input-placeholder {
+.foot-contacts .subscribe-input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-input::placeholder {
+.foot-contacts .subscribe-input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-button {
+.foot-contacts .subscribe-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -762,7 +716,7 @@ h6 {
   cursor: pointer;
 }
 
-.subscribe-button-text {
+.foot-contacts .subscribe-button-text {
   margin-right: 10px;
   font-weight: 700;
   font-size: 16px;
@@ -771,7 +725,7 @@ h6 {
   color: #ffffff;
 }
 
-.subscribe-icon {
+.foot-contacts .subscribe-icon {
   width: 25px;
   height: 25px;
 }

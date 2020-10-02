@@ -8,24 +8,39 @@
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero.jpg);
+
+  @media screen and (max-width: 767px) {
+    padding-top: 118px;
+    height: 400px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero480-1x.jpg);
+      @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), url(../images/hero480-2x.jpg);
+  }
 }
 
 .hero-text {
   max-width: 700px;
-  margin-right: auto;
-  margin-left: auto;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $white-color;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 45px;
+    margin-left: 45px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
 }
 
 .hero-button {
@@ -33,7 +48,6 @@
   width: 200px;
   height: 50px;
   margin-top: 30px;
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
