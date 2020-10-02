@@ -8,8 +8,10 @@
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+}
 
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .hero-section {
     padding-top: 118px;
     height: 400px;
     background-image: linear-gradient(
@@ -18,44 +20,45 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero480-1x.jpg);
-      @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ), url(../images/hero480-2x.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero480-2x.jpg);
+    }
   }
-}
+  .hero-text {
+    max-width: 700px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $white-color;
 
-.hero-text {
-  max-width: 700px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $white-color;
-
-  @media screen and (max-width: 767px) {
-    margin-right: 45px;
-    margin-left: 45px;
-    font-size: 26px;
-    line-height: 1.62;
+    @media screen and (max-width: 767px) {
+      margin-right: 45px;
+      margin-left: 45px;
+      font-size: 26px;
+      line-height: 1.62;
+    }
   }
-}
 
-.hero-button {
-  display: inline-block;
-  width: 200px;
-  height: 50px;
-  margin-top: 30px;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: $white-color;
-  background-color: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  outline: none;
-  border: none;
-  cursor: pointer;
+  .hero-button {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
 }

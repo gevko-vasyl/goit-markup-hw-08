@@ -1,5 +1,10 @@
 /*Clients*/
 
+.clients-section {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
 .clients-title {
   font-weight: 700;
   font-size: 36px;
@@ -9,12 +14,23 @@
 }
 
 .clients {
+  display: flex;
+  flex-wrap: wrap;
+
   margin-top: 50px;
 }
-
+.clients-item {
+  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:nth-child(2n) {
+      margin-left: 30px;
+    }
+  }
+}
 .clients-link {
-  display: block;
-  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 90px;
 
   color: #afb1b8;
@@ -28,5 +44,9 @@
   &:focus {
     color: $accent-color;
     border-color: $accent-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 210px;
   }
 }
