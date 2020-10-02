@@ -6,8 +6,8 @@
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  /*font-size: 26px;
+  line-height: 1.19;*/
   color: $accent-color;
 }
 
@@ -21,7 +21,14 @@
 
 /*Site nav*/
 
-.site-nav {
+.main-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*.site-nav {
   display: flex;
   margin-left: 93px;
 }
@@ -33,15 +40,15 @@
 
 .nav-item + .nav-item {
   margin-left: 50px;
-}
+}*/
+
 .nav-link {
   position: relative;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /*  padding-top: 32px;
+  padding-bottom: 32px;*/
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  /*font-size: 14px;
+  line-height: 1.14;*/
   letter-spacing: 0.02em;
   color: $title-text-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -70,10 +77,11 @@
 /*Contacts*/
 
 .head-contacts {
-  display: flex;
+  /*display: flex;
   margin-left: auto;
+  align-items: center;*/
+
   font-style: normal;
-  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -81,7 +89,6 @@
 }
 
 .head-link {
-  align-items: center;
   color: $primary-text-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
