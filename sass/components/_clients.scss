@@ -1,8 +1,8 @@
 /*Clients*/
 
 .clients-section {
-  margin-top: 60px;
-  margin-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients-title {
@@ -48,5 +48,26 @@
 
   @media screen and (max-width: 767px) {
     width: 210px;
+  }
+}
+
+@media screen and (min-width:768px){
+  .clients{
+    display: flex;
+    flex-wrap: wrap;
+
+    &-title{
+      font-size: 28px;
+      line-height: 1.18;
+    }
+    
+    &-item{
+      width: 226px;
+      margin-right: 30px;
+      }
+    
+    &-item:nth-child(3n){
+      margin-right: 0px;
+    }
   }
 }

@@ -371,6 +371,8 @@ h6 {
 .logo {
   font-family: Raleway;
   font-style: normal;
+  font-size: 24px;
+  line-height: 1.16;
   font-weight: 700;
   color: #2196f3;
 }
@@ -384,6 +386,10 @@ h6 {
 }
 
 /*Site nav*/
+.portfolio-nav {
+  border-bottom: 1px solid #ececec;
+}
+
 .main-nav {
   position: relative;
   display: -webkit-box;
@@ -393,14 +399,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-bottom: 1px solid #ececec;
 }
 
 .nav-link {
-  position: relative;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #212121;
@@ -431,8 +432,6 @@ h6 {
 .head-contacts {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -449,6 +448,91 @@ h6 {
 .contact-icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav {
+    height: 80px;
+  }
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 88px;
+  }
+  .nav-item + .nav-item {
+    margin-left: 50px;
+  }
+  .nav-item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80px;
+  }
+  .nav-link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .head-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 80px;
+  }
+  .head-link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  .head-link + .head-link {
+    margin-top: 10px;
+  }
+  .contact-icon {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .site-nav {
+    margin-left: 93px;
+  }
+  .head-contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 304px;
+  }
+  .head-link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .head-link + .head-link {
+    margin-top: 0;
+    margin-left: 30px;
+  }
 }
 
 .menu-button {
@@ -509,9 +593,10 @@ h6 {
 }
 
 @media screen and (max-width: 767px) {
-  .logo {
-    font-size: 24px;
-    line-height: 1.16;
+  .main-nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .site-nav {
     margin-top: 60px;
@@ -527,6 +612,7 @@ h6 {
     height: 33px;
   }
   .nav-link {
+    position: relative;
     font-size: 18px;
     line-height: 1.16;
   }
@@ -554,7 +640,7 @@ h6 {
 
 .portfolio-section {
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 
 .buttons {
@@ -627,9 +713,13 @@ h6 {
   }
   .portfolio-items li {
     width: 354px;
+    height: 404px;
   }
   .portfolio-items li:nth-child(2n) {
     margin-left: 30px;
+  }
+  .portfolio-img img {
+    width: 354px;
   }
 }
 
@@ -667,7 +757,7 @@ h6 {
   padding-right: 24px;
   padding-left: 24px;
   width: 100%;
-  height: 294px;
+  height: 100%;
   font-family: Roboto;
   font-weight: normal;
   font-size: 18px;
@@ -745,7 +835,6 @@ h6 {
 .studio-social-title {
   text-align: center;
   font-size: 14px;
-  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
@@ -799,7 +888,6 @@ h6 {
 
 .subscribe-title {
   text-align: center;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -874,7 +962,6 @@ h6 {
 
 .subscribe-button-text {
   margin-right: 10px;
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -884,5 +971,33 @@ h6 {
 .subscribe-icon {
   width: 25px;
   height: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .foot-thumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .studio-social {
+    margin-top: 5px;
+  }
+  .subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscribe-input {
+    width: 450px;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

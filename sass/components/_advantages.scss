@@ -39,3 +39,31 @@
     color: $primary-text-color;
   }
 }
+
+@media screen and (min-width:768px){
+
+.advantages{
+    display: flex;
+    flex-wrap: wrap;
+
+    &-section{
+      padding-top: 60px;
+    }
+
+    &-item{
+   width: 354px;
+   }
+
+   &-item:nth-child(2n){
+     margin-left: 30px;
+   }
+
+   &-item:nth-last-child(-n+2){
+     margin-top: 30px;
+   }
+
+   &-title{
+     text-align: start;
+   }
+}
+}
