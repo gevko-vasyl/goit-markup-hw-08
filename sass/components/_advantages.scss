@@ -5,7 +5,7 @@
   padding-bottom: 60px;
 }
 
-.item {
+.advantages-item {
   margin-top: 30px;
 }
 
@@ -40,6 +40,13 @@
   }
 }
 
+@media screen and (max-width:767px){
+
+  .advantages-item {
+  margin-top: 30px;
+}
+}
+
 @media screen and (min-width:768px){
 
 .advantages{
@@ -66,4 +73,15 @@
      text-align: start;
    }
 }
+}
+
+@media screen and (min-width:1200px){
+  .advantages-item{
+    width: 270px;
+
+    &:nth-last-child(-n+3){
+      margin-left: 30px;
+    }
+  }
+
 }

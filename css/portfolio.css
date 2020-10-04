@@ -718,9 +718,6 @@ h6 {
   .portfolio-items li:nth-child(2n) {
     margin-left: 30px;
   }
-  .portfolio-img img {
-    width: 354px;
-  }
 }
 
 .portfolio-items li {
@@ -733,6 +730,28 @@ h6 {
 .portfolio-items li:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .portfolio-items {
+    margin-top: 50px;
+  }
+  .portfolio-items li {
+    width: calc((100% - 2 * 30px) /3);
+  }
+  .portfolio-items li {
+    margin-right: 30px;
+  }
+  .portfolio-items li:nth-child(2n) {
+    margin-left: 0px;
+  }
+  .portfolio-items li:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .portfolio-img {
@@ -998,6 +1017,43 @@ h6 {
   }
   .subscribe-input {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .foot-contacts {
+    text-align: start;
+  }
+  .studio-social {
+    margin-top: 12px;
+    margin-left: 70px;
+  }
+  .studio-social-title {
+    text-align: start;
+  }
+  .subscribe {
+    margin-left: 93px;
+    margin-top: 12px;
+  }
+  .subscribe-title {
+    text-align: start;
+  }
+  .subscribe-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .subscribe-input {
+    width: 358px;
+  }
+  .subscribe-button {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

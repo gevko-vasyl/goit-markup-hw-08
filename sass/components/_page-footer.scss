@@ -153,3 +153,45 @@
     width: 450px;      
   }
 }
+
+@media screen and (min-width:1200px){
+  
+  .footer{
+    display: flex;
+    }
+
+    .foot-contacts{
+      text-align: start;
+    }
+
+  .studio-social{
+    margin-top: 12px;
+    margin-left: 70px;
+
+    &-title{
+      text-align: start;
+    }
+  }
+
+  .subscribe{
+    margin-left: 93px;
+    margin-top: 12px;
+
+    &-title{
+      text-align: start;
+    }
+
+    &-form{
+      flex-direction: row;
+      
+      }
+
+    &-input{
+      width: 358px;
+    }
+
+    &-button{
+      margin-top: 0;
+      }
+  }
+}
