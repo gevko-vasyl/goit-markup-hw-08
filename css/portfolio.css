@@ -639,7 +639,7 @@ h6 {
 }
 
 .portfolio-section {
-  padding-top: 60px;
+  padding-top: 45px;
   padding-bottom: 60px;
 }
 
@@ -654,8 +654,6 @@ h6 {
 @media screen and (max-width: 767px) {
   .buttons li {
     margin-right: 8px;
-  }
-  .buttons li:nth-last-child(-n+2) {
     margin-top: 15px;
   }
 }
